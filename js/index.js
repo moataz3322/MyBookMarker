@@ -88,7 +88,7 @@ function displayData() {
       <td>${siteList[i].name}</td>
       <td> <a href="${
         siteList[i].url
-      }"><button class="visit-btn" id="visitBtn"  target="_blank" rel="noopener noreferrer" ><i class="fa-solid fa-eye pe-2"></i>Visit</button></a></td>
+      } " target="_blank" rel="noopener noreferrer"><button class="visit-btn" id="visitBtn"  ><i class="fa-solid fa-eye pe-2"></i>Visit</button></a></td>
       <td><button onclick="delData(${i})" class="del-btn" id="delBtn"><i class="fa-solid fa-trash-can"></i> Delete</button></td>
     </tr>`;
   }
