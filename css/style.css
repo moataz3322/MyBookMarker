@@ -1,0 +1,296 @@
+/* ======= Body Dark Background ======= */
+body {
+  background: linear-gradient(120deg, hsl(220, 30%, 10%), hsl(240, 25%, 15%));
+  font-family: "PT Sans Caption", sans-serif;
+  color: hsl(210, 20%, 90%);
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(rgba(0, 0, 50, 0.7), rgba(0, 0, 50, 0.6)),
+    url(../img/alone-standing-purple-wave-digital-art-2k-wallpaper-uhdpaper.com-70@1@o.jpg)
+      center center / cover no-repeat fixed;
+}
+
+h1 {
+  color: hsl(200, 80%, 70%);
+  font-family: "Pacifico", cursive;
+  font-size: 4rem;
+  letter-spacing: 1px;
+  display: inline-block;
+  background: linear-gradient(
+    90deg,
+    hsl(210, 90%, 30%),
+    hsl(200, 80%, 70%),
+    hsl(210, 90%, 30%)
+  );
+  background-size: 200% auto;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  animation: wave 2s linear infinite;
+}
+
+@keyframes wave {
+  0% {
+    background-position: 200% center;
+  }
+  100% {
+    background-position: -200% center;
+  }
+}
+
+h2 {
+  /* color: hsl(260, 80%, 75%); */
+  color: hsl(200, 80%, 70%);
+
+  font-family: "Pacifico", cursive;
+  font-size: 2rem;
+}
+
+.text-gradient {
+  background: linear-gradient(90deg, hsl(200, 80%, 65%), hsl(280, 70%, 70%));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+/* todo Modal style */
+.circle-container {
+  display: flex;
+  gap: 15px;
+  padding: 5px;
+}
+
+.circle {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+}
+
+.red {
+  background-color: #f25f5c;
+}
+.yellow {
+  background-color: #fbbf24;
+}
+.green {
+  background-color: #22c55e;
+}
+.modal-body span {
+  font-family: "Bree Serif", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 21px;
+}
+
+.modal-body p i {
+  color: #bb4120;
+}
+.modal-footer {
+  border-top: none;
+  background: #f8f9fa;
+  border-radius: 0 0 20px 20px; /* زوايا دائرية لأسفل */
+}
+
+.modal-footer .btn {
+  border-radius: 8px;
+  background: linear-gradient(90deg, #0dcaf0, #0d6efd);
+  color: #fff;
+  font-weight: 500;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease-in-out;
+}
+
+.modal-footer .btn:hover {
+  background: linear-gradient(90deg, #0d6efd, #0dcaf0);
+  transform: translateY(-2px);
+}
+/* ======= Inputs ======= */
+input.form-control {
+  border: 2px solid hsl(210, 30%, 40%);
+  border-radius: 8px;
+  background-color: hsl(220, 20%, 20%);
+  color: hsl(210, 20%, 90%);
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+input.form-control::placeholder {
+  color: hsl(210, 15%, 60%);
+}
+
+input.form-control:focus {
+  border-color: hsl(200, 80%, 60%);
+  box-shadow: 0 0 8px hsla(200, 80%, 50%, 0.4);
+  outline: none;
+  background-color: #29303d;
+  color: white;
+}
+
+/* ======= Submit Button (Inset Effect) ======= */
+.sub-btn {
+  width: 30%;
+  margin-top: 20px;
+  padding: 10px;
+  border: 1px solid hsl(200, 70%, 50%);
+  border-radius: 50px;
+  color: hsl(200, 70%, 50%);
+  background-color: transparent;
+  position: relative;
+  font-weight: 600;
+  transition: all 0.4s ease;
+  box-shadow: inset 3px 3px 6px hsla(200, 40%, 20%, 0.5),
+    inset -3px -3px 6px hsla(200, 80%, 70%, 0.2);
+}
+
+.sub-btn:hover {
+  background-color: hsl(200, 70%, 50%);
+  color: hsl(0, 0%, 100%);
+  box-shadow: inset 0 0 10px hsla(200, 70%, 40%, 0.6);
+}
+
+.form-label span {
+  font-size: 1.2rem;
+  color: hsl(145, 60%, 60%);
+}
+
+/* ======= Table Container ======= */
+table {
+  --bs-table-bg: transparent !important;
+  background-color: hsl(220, 15%, 12%) !important;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 8px 20px hsla(220, 50%, 5%, 0.4);
+  color: hsl(210, 20%, 95%) !important;
+  --bs-table-color-state: unset !important;
+  --bs-table-color-type: unset !important;
+  --bs-table-color: unset !important;
+}
+
+/* ======= Table Header ======= */
+table thead {
+  background: linear-gradient(
+    90deg,
+    hsl(220, 40%, 20%),
+    hsl(240, 40%, 25%)
+  ) !important;
+}
+
+table thead th {
+  padding: 12px 15px;
+
+  letter-spacing: 1px;
+  color: hsl(145, 60%, 60%) !important;
+
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  font-size: 1rem;
+
+  border-bottom: 1px solid hsla(0, 0%, 100%, 0.1) !important;
+}
+table tbody td {
+  color: hsl(210, 20%, 85%) !important;
+  font-weight: 500;
+  font-size: 1.2rem;
+  transition: color 0.3s ease;
+}
+
+/* ======= Table Rows ======= */
+table tbody tr {
+  background-color: hsl(220, 15%, 15%) !important;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+table tbody tr:hover {
+  background-color: hsl(220, 20%, 10%) !important;
+  transform: scale(1.02);
+}
+
+table tbody tr:hover td {
+  color: hsl(200, 80%, 65%) !important;
+}
+table tbody tr:hover th {
+  color: hsl(200, 80%, 65%) !important;
+}
+/* ======= Visit Button ======= */
+.visit-btn {
+  background: transparent !important;
+  border: 1px solid hsl(200, 70%, 50%) !important;
+  color: hsl(200, 70%, 50%) !important;
+  padding: 6px 14px;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  transition: all 0.3s ease;
+}
+
+.visit-btn:hover {
+  background: hsl(200, 70%, 50%) !important;
+  color: hsl(0, 0%, 100%) !important;
+  box-shadow: 0 0 8px hsla(200, 70%, 50%, 0.6);
+}
+
+/* ======= Delete Button ======= */
+.del-btn {
+  background: transparent !important;
+  border: 1px solid hsl(0, 70%, 50%) !important;
+  color: hsl(0, 70%, 50%) !important;
+  padding: 6px 14px;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  transition: all 0.3s ease;
+}
+
+.del-btn:hover {
+  background: hsl(0, 70%, 50%) !important;
+  color: white !important;
+}
+
+/* todo Qoute */
+
+.main-sections {
+  display: flex;
+  gap: 20px;
+}
+
+/* ===== Bookmarker Section ===== */
+.bookmark-section {
+  flex: 1 1 70%;
+  background: hsl(220, 15%, 12%);
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 8px 20px hsla(220, 50%, 5%, 0.4);
+}
+
+/* ===== Quote Section ===== */
+.quote-section {
+  flex: 1 1 25%;
+  background: linear-gradient(135deg, hsl(280, 50%, 25%), hsl(240, 40%, 30%));
+  border-radius: 12px;
+  padding: 20px;
+  color: hsl(0, 0%, 95%);
+  box-shadow: 0 8px 15px hsla(240, 50%, 10%, 0.5);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.quote-section h2 {
+  font-family: "Pacifico", cursive;
+  color: hsl(320, 60%, 70%);
+  margin-bottom: 15px;
+}
+
+.quote-section #quote {
+  font-style: italic;
+  color: hsl(0, 0%, 90%);
+  margin: 10px 0;
+  text-align: center;
+}
+
+.quote-section #author {
+  color: hsl(0, 0%, 70%);
+  font-size: 0.9rem;
+}
+
+.qoute p {
+  color: hsl(145, 60%, 60%);
+  font-size: 30px;
+}
