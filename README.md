@@ -1,0 +1,1 @@
+<a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.demolab.com?font=Pacifico&size=90&duration=3000&pause=1000&color=24BCF7&width=700&height=400&lines=BookMarker" alt="Typing SVG" /></a>
